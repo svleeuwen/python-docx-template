@@ -612,7 +612,7 @@ class DocxTemplate(object):
             self.docx_ids_index += 1
             elt.attrib["id"] = str(self.docx_ids_index)
 
-    def new_subdoc(self, docpath=None) -> Subdoc:
+    def new_subdoc(self, docpath=None) -> "Subdoc":
         from .subdoc import Subdoc
 
         self.init_docx()
